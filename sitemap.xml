@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mattkleski.github.io/MattLovesPenguins/model.html</loc>
+    <lastmod>2024-04-24T05:41:42.069Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattkleski.github.io/MattLovesPenguins/r-reticulate/lib/python3.11/site-packages/numpy/random/LICENSE.html</loc>
+    <lastmod>2024-04-24T05:41:42.517Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattkleski.github.io/MattLovesPenguins/r-reticulate/lib/python3.11/site-packages/pandas/tests/indexes/period/test_indexing.html</loc>
+    <lastmod>2024-04-24T05:41:42.861Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattkleski.github.io/MattLovesPenguins/r-reticulate/lib/python3.11/site-packages/pandas/tests/indexes/datetimes/test_indexing.html</loc>
+    <lastmod>2024-04-24T05:41:42.845Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattkleski.github.io/MattLovesPenguins/r-reticulate/lib/python3.11/site-packages/pandas/tests/indexes/period/test_constructors.html</loc>
+    <lastmod>2024-04-24T05:41:42.861Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mattkleski.github.io/MattLovesPenguins/eda.html</loc>
+    <lastmod>2024-04-24T05:41:42.069Z</lastmod>
+  </url>
+</urlset>
