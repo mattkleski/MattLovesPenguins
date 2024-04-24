@@ -1,0 +1,3 @@
+"0","print(f""Intercept {model.intercept_}"")"
+"1","Intercept 2169.2697209393996
+"

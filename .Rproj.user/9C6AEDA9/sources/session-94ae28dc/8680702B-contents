@@ -1,0 +1,44 @@
+---
+title: "eda"
+format: html
+editor: visual
+---
+
+## Penguin Size and Mass by Sex and Species
+
+```{r}
+library(dplyr)  # Load dplyr for data manipulation
+library(palmerpenguins)  # Load palmerpenguins dataset
+library(ggplot2)         # Load ggplot2 for plotting
+
+df <- palmerpenguins::penguins  # Load penguins data
+```
+
+```{r}
+# Clean data: remove rows with NA in 'bill_length_mm' or 'body_mass_g'
+df_clean <- df %>%
+  filter(!is.na(bill_length_mm) & !is.na(body_mass_g))
+
+df_clean %>%
+  group_by(species, sex) %>%
+  summarise(
+    across(
+      where(is.numeric), 
+      \(x) mean(x, na.rm = TRUE)  # Calculate mean, removing NA values
+      ),
+    .groups = 'drop'  # Avoid grouping in the output
+    ) %>%
+  knitr::kable()  # Create a markdown table of the summary
+```
+
+## Penguin Size vs Mass by Species
+
+```{r}
+df_clean %>%
+  ggplot(aes(x = bill_length_mm, y = body_mass_g, color = species)) +
+  geom_point() +  # Scatter plot points
+  geom_smooth(method = "lm") +  # Add linear regression line
+  labs(
+    subtitle = "geom_smooth() using formula y ~ x"  # Indicate formula used in plot subtitle
+  )
+```
