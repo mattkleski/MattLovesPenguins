@@ -7,7 +7,7 @@ website:
     title: "Matt Loves Penguins"
     navbar:
       left:   
-      - href: About.html
+      - href: About.qmd
         text: About
       - href: eda.qmd         
         text: EDA       

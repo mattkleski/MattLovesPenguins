@@ -1,0 +1,36 @@
+---
+title: "About the Palmer Penguins"
+format: html
+---
+
+# About the Palmer Penguins Dataset
+
+The Palmer Penguins dataset is a collection of data used for data science and educational purposes, providing insight into the morphology of three different penguin species in Antarctica. This dataset was introduced to the data science community to offer an alternative to the commonly used Iris dataset. It features measurements such as bill length, bill depth, flipper length, body mass, and more, along with demographic information like species, sex, and year of observation. The data were collected from penguins observed at the Palmer Station, Antarctica, over a period from 2007 to 2009 by Dr. Kristen Gorman in conjunction with the Palmer Station Long Term Ecological Research Program. The dataset serves as an excellent resource for teaching data visualization, statistics, and machine learning.
+
+# Origins of the Dataset
+
+The dataset originated from research conducted by Dr. Kristen Gorman with the Palmer Long Term Ecological Research (LTER) Network. The LTER program is focused on studying ecological processes over extended periods. The research by Dr. Gorman specifically aimed to explore the foraging ecology of penguins and how environmental changes affect their population dynamics. Over three consecutive years, detailed measurements of approximately 344 penguins were taken, providing a rich and structured dataset. The Palmer Penguins dataset was then curated by Dr. Allison Horst, who created it to facilitate teaching statistics and data science effectively by using relatable data.
+
+# Penguin Species Descriptions
+
+## Adelie Penguin
+
+The Adelie penguins are distinguished by their blue-black backs and white fronts, with a distinctive white ring around their eyes. They are one of the most southernly distributed of all seabirds, commonly found along the entire coast of Antarctica. Adelies are highly adapted to life in the water and on ice, and their diet mainly consists of krill and fish.
+
+![Adelie Penguin](images/adelie.jpg)
+
+## Gentoo Penguin
+
+Recognizable by their bright orange-red bills and the conspicuous white patch above their eyes, Gentoos are the third-largest penguin species. They prefer ice-free areas, including coastal plains, sheltered valleys, and cliffs. Gentoos have a varied diet that can include fish, squid, and a considerable amount of krill.
+
+![Gentoo Penguin](images/gentoo.jpg)
+
+## Chinstrap Penguin
+
+Known for the narrow black band under their heads which makes it appear as if they are wearing a black helmet, Chinstrap penguins are abundant in the islands and shores of the Southern Ocean. They are bold and aggressive in nature. Their diet primarily consists of krill, though they also consume fish and crustaceans.
+
+![Chinstrap Penguin](images/chinstrap.jpg)
+
+# The Palmer Archipelago
+
+The Palmer Archipelago is located off the northwestern coast of Antarctica in the Southern Ocean. Comprising several islands, including Anvers, Biscoe, and the smaller Torgersen Island, the archipelago is an important breeding ground for a variety of Antarctic bird species, including the three species studied in the Palmer Penguins dataset. The region around the Palmer Archipelago is particularly significant for ecological studies due to its sensitive environment, which is affected by climate change. The islands are characterized by their rugged, icy landscapes which provide critical habitats for diverse marine and bird populations. These islands also host Palmer Station, one of the three United States research stations in Antarctica, where much of the research on local wildlife is based.
