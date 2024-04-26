@@ -4,7 +4,7 @@ quarto publish gh-pages
 on:
   workflow_dispatch:
   push:
-    branches: main
+    branches: master
 
 name: Quarto Publish
 
