@@ -1,5 +1,0 @@
-"0","library(dplyr)  # Load dplyr for data manipulation"
-"0","library(palmerpenguins)  # Load palmerpenguins dataset"
-"0","library(ggplot2)         # Load ggplot2 for plotting"
-"0",""
-"0","df <- palmerpenguins::penguins  # Load penguins data"

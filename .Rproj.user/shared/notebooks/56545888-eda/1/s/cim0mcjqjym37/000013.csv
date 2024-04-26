@@ -1,7 +1,0 @@
-"0","df_clean %>%"
-"0","  ggplot(aes(x = bill_length_mm, y = body_mass_g, color = species)) +"
-"0","  geom_point() +  # Scatter plot points"
-"0","  geom_smooth(method = ""lm"") +  # Add linear regression line"
-"0","  labs("
-"0","    subtitle = ""geom_smooth() using formula y ~ x""  # Indicate formula used in plot subtitle"
-"0","  )"

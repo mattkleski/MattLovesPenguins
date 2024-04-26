@@ -1,3 +1,0 @@
-"0","print(f""Columns {X.columns}"")"
-"1","Columns Index(['bill_length_mm', 'species_Chinstrap', 'species_Gentoo', 'sex_male'], dtype='object')
-"

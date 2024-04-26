@@ -39,6 +39,123 @@ df_clean %>%
   geom_point() +  # Scatter plot points
   geom_smooth(method = "lm") +  # Add linear regression line
   labs(
-    subtitle = "geom_smooth() using formula y ~ x"  # Indicate formula used in plot subtitle
+    subtitle = "Bill Length vs. Body Mass"  # Indicate formula used in plot subtitle
   )
 ```
+
+## Sexual Dimorphism
+
+```{r}
+library(ggplot2)
+
+# Load the dataset
+data("penguins", package = "palmerpenguins")
+
+# Clean data: remove rows with NA
+penguins_clean <- na.omit(penguins)
+
+# Plot bill length vs. bill depth colored by sex and faceted by species
+ggplot(penguins_clean, aes(x = bill_length_mm, y = bill_depth_mm, color = sex)) +
+  geom_point(alpha = 0.5) +
+  facet_grid(. ~ species) +
+  labs(title = "Bill Length vs. Bill Depth by Sex and Species",
+       x = "Bill Length (mm)",
+       y = "Bill Depth (mm)",
+       color = "Sex") +
+  theme_minimal()
+
+```
+
+Above is a scatter plot of bill length versus bill depth, colored by sex and separated by species. It helps illustrate differences in bill size and shape between male and female penguins across different species. Such distinctions can be crucial for understanding sexual selection and ecological adaptations among penguins.
+
+```{r}
+library(ggplot2)
+
+# Load the dataset
+data("penguins", package = "palmerpenguins")
+
+# Clean data: remove rows with NA
+penguins_clean <- na.omit(penguins)
+
+# Boxplot of body mass by sex and species
+ggplot(penguins_clean, aes(x = species, y = body_mass_g, fill = sex)) +
+  geom_boxplot() +
+  labs(title = "Body Mass Distribution by Sex and Species",
+       x = "Species",
+       y = "Body Mass (g)",
+       fill = "Sex") +
+  theme_minimal()
+
+```
+
+This plot is a boxplot that shows the distribution of body mass for each penguin species, differentiated by sex. It is important because it highlights potential differences in nutritional status or survival strategies between males and females, which can impact reproductive success and population dynamics.
+
+```{r}
+library(ggplot2)
+
+# Load the dataset
+data("penguins", package = "palmerpenguins")
+
+# Clean data: remove rows with NA
+penguins_clean <- na.omit(penguins)
+
+# Histogram of flipper length by sex and species
+ggplot(penguins_clean, aes(x = flipper_length_mm, fill = sex)) +
+  geom_histogram(position = "dodge", binwidth = 5) +
+  facet_wrap(~species) +
+  labs(title = "Flipper Length Distribution by Sex and Species",
+       x = "Flipper Length (mm)",
+       y = "Frequency",
+       fill = "Sex") +
+  theme_minimal()
+
+```
+
+This histogram compares the flipper length of penguins by sex and species. Flipper length is a key trait related to swimming efficiency and foraging behavior. Understanding how this trait varies between sexes can provide insights into the roles of males and females in penguin societies and their environment.
+
+## Penguins by Year
+
+```{r}
+library(ggplot2)
+
+# Load the dataset
+data("penguins", package = "palmerpenguins")
+
+# Clean data: remove rows with NA
+penguins_clean <- na.omit(penguins)
+
+# Create a bar plot to show the count of species observations by year
+ggplot(penguins_clean, aes(x = factor(year), fill = species)) +
+  geom_bar(position = "dodge") +
+  labs(title = "Observations of Penguin Species Across Different Years",
+       x = "Year",
+       y = "Number of Observations",
+       fill = "Species") +
+  theme_minimal()
+
+```
+
+This bar plot shows the number of observations of each penguin species by year. It's useful for identifying trends over time, such as changes in population sizes or shifts in habitat use, or even how researcher bias might change over the years. This can be particularly relevant for conservation efforts and studies of ecological impacts due to climate change or human activity.
+
+```{r}
+library(ggplot2)
+
+# Load the dataset
+data("penguins", package = "palmerpenguins")
+
+# Clean data: remove rows with NA, particularly in body mass, year, and species
+penguins_clean <- na.omit(penguins[, c("body_mass_g", "year", "species")])
+
+# Create a boxplot of body mass by year and species
+ggplot(penguins_clean, aes(x = factor(year), y = body_mass_g, fill = species)) +
+  geom_boxplot() +
+  labs(title = "Distribution of Penguin Body Mass by Year and Species",
+       x = "Year",
+       y = "Body Mass (g)") +
+  facet_wrap(~species) +
+  theme_minimal()
+
+
+```
+
+This plot is a boxplot that displays the distribution of body mass for three species of penguins across different years. It is crucial as it helps reveal how environmental conditions, such as food availability or habitat changes, may impact each species differently. This insight is valuable for conservation efforts and understanding ecological dynamics within the Palmer Archipelago.
